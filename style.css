@@ -1,0 +1,293 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.trait {
+	width: 320px;
+	height: 2px;
+	margin: 22px auto 26px auto;
+}
+
+.titre {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.flex {
+	display: flex;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+/*-------------------------------------*/
+
+header {
+	background-color: #2d3e50;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+header img {
+	display: none;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	float: left;
+	padding: 15px;
+}
+
+nav {
+	float: right;
+	display: flex;
+}
+
+header nav a {
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 25px 20px;
+}
+
+header nav a:hover {
+	color: #2d3e50;
+	background-color: #ffffff;
+	transition: 0.5s;
+}
+
+#pres {
+	background-color: #18bd9b;
+	padding: 113px 0 170px 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+#pres img {
+	margin: auto;
+	display: block;
+}
+
+#pres h2 {
+	font-size: 60px;
+	margin-top: 70px;
+}
+
+#pres .trait {
+	background-color: #ffffff;
+}
+
+#pres h3 {
+	font-size: 25px;
+	letter-spacing: 4px;
+}
+
+#portfolio {
+	padding: 100px 0 92px 0;
+	color: #2f3e5b;
+}
+
+#portfolio .trait {
+	background-color: #2f3e5b;
+}
+
+#portfolio .flex div {
+	width: 33.33%;
+	padding: 21px 5%;
+}
+
+#portfolio .flex div img {
+	width: 100%;
+}
+
+#apropos {
+	background-color: #18bd9b;
+	padding: 100px 0 120px 0;
+}
+
+#apropos .titre {
+	color: #ffffff;
+}
+
+#apropos .trait {
+	background-color: #ffffff;
+}
+
+#apropos .flex div {
+	width: 50%;
+	color: #ffffff;
+	padding: 0 10%;
+}
+
+#apropos .flex div h3 {
+	text-align: center;
+	color: #2f3e5b;
+	margin-bottom: 25px;
+}
+
+#apropos a {
+	padding: 20px 64px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 54px auto 0 auto;
+	display: block;
+	width: 182px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#apropos a:hover {
+	background-color: #ffffff;
+	color: #18bd9b;
+	transition: 0.3s;
+}
+
+#contact {
+	padding: 100px 0 90px 0;
+}
+
+#contact .titre {
+	color: #2f3e5b;
+}
+
+#contact .trait {
+	background-color: #2f3e5b;
+}
+
+form {
+	width: 75%;
+	margin: auto;
+}
+
+label {
+	margin-bottom: 24px;
+	color: #2f3e5b;
+	display: block;
+}
+
+#nom, #tel, #email, textarea {
+	width: 100%;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px dashed #2f3e5b;
+	margin-bottom: 26px;
+}
+
+textarea {
+	height: 100px;
+	resize: none;
+}
+
+input[type=submit] {
+	width: 125px;
+	height: 63px;
+	background-color: #18bd9b;
+	color: #ffffff;
+	margin: auto;
+	display: block;
+	border: 1px solid #18bd9b;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #ffffff;
+	color: #18bd9b;
+	transition: 0.3s;
+}
+
+#adresse {
+	padding: 55px 0 31px 0;
+	background-color: #2d3e50;
+	color: #ffffff;
+	text-align: center;
+}
+
+#adresse div {
+	width: 50%;
+}
+
+#adresse div h3  {
+	margin-bottom: 18px;
+}
+
+#adresse div a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+#adresse div a:hover {
+	color: #18bd9b;
+}
+
+
+#adresse img {
+	width: 30px;
+	margin-top: 9px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+footer {
+	padding: 25px 0;
+	background-color: #1b252f;
+	color: #ffffff;
+	text-align: center;
+}
+
+@media screen and (max-width:  660px) {
+
+	.flex {
+		display: block;
+	}
+
+	nav {
+		float: none;
+		display: none;
+	}
+
+	header nav a {
+		display: block;
+	    width: 100%;
+	    text-align: center;
+	    box-sizing: border-box;
+	}
+
+	header img {
+		display: block;
+		width: 40px;
+		float: right;
+		margin-right: 15px;
+		margin-top: 15px;
+	}
+
+
+	#portfolio .flex div {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#apropos .flex div {
+		width: 100%;
+		box-sizing: border-box;
+		margin-bottom: 15px;
+	}
+
+	#adresse div {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
